@@ -1,0 +1,11 @@
+{
+  "name": "evoclaude",
+  "version": "0.1.0",
+  "description": "Agent self-evolution plugin for Claude Code. Captures interactions through hooks for learning and improvement analysis.",
+  "author": {
+    "name": "Lincoln"
+  },
+  "keywords": ["agent", "evolution", "self-improvement", "hooks", "learning", "analytics"],
+  "license": "MIT",
+  "repository": "https://github.com/L-Qun/EvoClaude"
+}

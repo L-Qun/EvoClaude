@@ -1,0 +1,39 @@
+{
+  "description": "EvoClaude - Agent self-evolution hooks for monitoring and learning from interactions",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PLUGIN_ROOT}/scripts/user-prompt-submit.mjs",
+            "statusMessage": "EvoClaude: Capturing user prompt..."
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PLUGIN_ROOT}/scripts/post-tool-use.mjs",
+            "statusMessage": "EvoClaude: Logging tool execution..."
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PLUGIN_ROOT}/scripts/collect.mjs",
+            "statusMessage": "EvoClaude: Running self-evolution..."
+          }
+        ]
+      }
+    ]
+  }
+}

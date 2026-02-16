@@ -1,0 +1,18 @@
+{
+  "name": "evoclaude",
+  "owner": {
+    "name": "Lincoln"
+  },
+  "metadata": {
+    "description": "Claude Code plugins by Lincoln",
+    "homepage": "https://github.com/L-Qun/EvoClaude"
+  },
+  "plugins": [
+    {
+      "name": "evoclaude",
+      "version": "0.1.0",
+      "source": "./plugin",
+      "description": "Agent self-evolution plugin for Claude Code."
+    }
+  ]
+}
